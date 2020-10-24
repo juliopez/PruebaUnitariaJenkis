@@ -1,16 +1,8 @@
-from flask import Flask
-app= Flask(__name__)
-
-def suma(a,b):
-	return a+b
-
-@app.route("/")
-def hello():
-	res = suma (3,2)
-	return "Hola Mundo"
-
-if __name__ == "__main__":
-	app.run(host='0.0.0.0', port=5000)
+def sum(a, b):
+    for n in (a, b):
+        if not isinstance(n, int) and not isinstance(n, float):
+            raise TypeError
+    return a + b
 
 
 
