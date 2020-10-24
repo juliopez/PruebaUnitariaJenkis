@@ -1,0 +1,25 @@
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>1.6.0</version>
+            <executions>
+                <execution>
+                    <configuration>
+                        <executable>python</executable>
+                        <workingDirectory>./</workingDirectory>
+                        <arguments>
+                            <argument>test_PruebaJenkinsPython.py</argument>
+                        </arguments>
+                    </configuration>
+                    <id>python_build</id>
+                    <phase>generate-resources</phase>
+                    <goals>
+                        <goal>exec</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
