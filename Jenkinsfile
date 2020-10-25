@@ -9,12 +9,12 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'py test_PruebaJenkinsPython.py'
+                bat 'C:\Users\Administrator\AppData\Local\Programs\Python\Python39\python.exe test_PruebaJenkinsPython.py'
             }
         }
         stage('Finalizando') {
             steps {
-                bat 'echo "Tarea Cumplida...."'
+                bat 'echo "Tarea Cumplida...." '
             }
         }
     }
