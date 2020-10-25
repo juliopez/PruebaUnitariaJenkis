@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat C:/Users/Administrator/AppData/Local/Programs/Python/Python39/python.exe test_PruebaJenkinsPython.py
+                bat py test_PruebaJenkinsPython.py
             }
         }
         stage('Finalizando') {
